@@ -12,7 +12,7 @@ export class ConfigurationService {
 
   constructor(@Optional() context: ConfigurationContext) {
     if (context) {
-      this.settings.next(context.config);
+      this.settings.next(context.appConfig);
     }
   }
 }

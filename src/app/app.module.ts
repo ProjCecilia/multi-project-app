@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ConfigurationModule } from '@mpa/configuration';
-import { config } from '../environments/environment'
+import { appConfig } from '../environments/environment'
 
 @NgModule({
   declarations: [
@@ -14,7 +14,7 @@ import { config } from '../environments/environment'
     BrowserModule,
     AppRoutingModule,
     ConfigurationModule.forRoot({
-      config
+      appConfig
     })
   ],
   providers: [],

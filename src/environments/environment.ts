@@ -4,10 +4,10 @@
 
 import { AppConfig } from "../configs/app.config.development";
 
-export const config = new AppConfig()
+export const appConfig = new AppConfig()
 
 export const environment = {
-  config,
+  appConfig,
   production: false
 };
 

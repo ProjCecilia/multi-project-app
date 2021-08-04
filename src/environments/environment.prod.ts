@@ -1,8 +1,8 @@
 import { AppConfig } from "../configs/app.config.production";
 
-export const config = new AppConfig();
+export const appConfig = new AppConfig();
 
 export const environment = {
-  config,
+  appConfig,
   production: true
 };
