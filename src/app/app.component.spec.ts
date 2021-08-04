@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'multi-project-app'`, () => {
+  it(`should have as title 'muti-project-app'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('multi-project-app');
+    expect(app.title).toEqual('muti-project-app');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('multi-project-app app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('muti-project-app app is running!');
   });
 });

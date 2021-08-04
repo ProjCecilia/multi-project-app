@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ConfigurationModule } from '@mpa/configuration';
+import { config } from '../environments/environment'
 
 @NgModule({
   declarations: [
@@ -10,7 +12,10 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ConfigurationModule.forRoot({
+      config
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

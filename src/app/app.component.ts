@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ConfigurationService } from '@mpa/configuration';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'multi-project-app';
+  constructor(private configurationService: ConfigurationService) {}
+  title = 'muti-project-app';
 }
