@@ -245,6 +245,46 @@
           }
         }
       }
+    },
+    "@mpa/shared": {
+      "projectType": "library",
+      "root": "projects/mpa/shared",
+      "sourceRoot": "projects/mpa/shared/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/mpa/shared/tsconfig.lib.json",
+            "project": "projects/mpa/shared/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/mpa/shared/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/mpa/shared/src/test.ts",
+            "tsConfig": "projects/mpa/shared/tsconfig.spec.json",
+            "karmaConfig": "projects/mpa/shared/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/mpa/shared/tsconfig.lib.json",
+              "projects/mpa/shared/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "muti-project-app"

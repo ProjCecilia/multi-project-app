@@ -31,6 +31,10 @@
       "@mpa/dashboard": [
         "dist/mpa/dashboard/mpa-dashboard",
         "dist/mpa/dashboard"
+      ],
+      "@mpa/shared": [
+        "dist/mpa/shared/mpa-shared",
+        "dist/mpa/shared"
       ]
     }
   },

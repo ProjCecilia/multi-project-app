@@ -4,7 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ConfigurationModule } from '@mpa/configuration';
-import { appConfig } from '../environments/environment'
+import { appConfig } from '../environments/environment';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap'
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { appConfig } from '../environments/environment'
     AppRoutingModule,
     ConfigurationModule.forRoot({
       appConfig
-    })
+    }),
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
